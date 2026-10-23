@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Backgrounds -->
+    <color name="black_bg">#121212</color>
+    <color name="gray_surface">#1E1E1E</color>
+
+    <!-- Text -->
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_gray">#B3B3B3</color>
+
+    <!-- Purples -->
+    <color name="primary_purple">#BB86FC</color>
+    <color name="dark_purple">#3700B3</color>
+    <color name="purple_text">#D0BCFF</color>
+</resources>
