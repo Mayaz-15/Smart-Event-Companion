@@ -1,0 +1,24 @@
+
+[
+  {
+    "id": "1",
+    "name": "AI Workshop",
+    "date": "25/10/2026",
+    "location": "University Hall",
+    "description": "Introduction to Artificial Intelligence."
+  },
+  {
+    "id": "2",
+    "name": "Tech Conference",
+    "date": "02/11/2026",
+    "location": "Main Auditorium",
+    "description": "Annual technology conference."
+  },
+  {
+    "id": "3",
+    "name": "Career Fair",
+    "date": "10/11/2026",
+    "location": "Student Center",
+    "description": "Meet potential employers."
+  }
+]

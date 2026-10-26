@@ -18,6 +18,9 @@ public class MainActivity extends AppCompatActivity {
         btnViewEvents.setOnClickListener(v ->
                 startActivity(new Intent(MainActivity.this, EventListActivity.class)));
 
+        findViewById(R.id.btnBluetooth).setOnClickListener(v ->
+                startActivity(new Intent(MainActivity.this, BluetoothActivity.class)));
+
         btnRegistered.setOnClickListener(v ->
                 startActivity(new Intent(MainActivity.this, RegisteredEventsActivity.class)));
     }

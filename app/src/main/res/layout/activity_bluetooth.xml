@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fillViewport="true" android:background="#F8FAFF">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:padding="20dp" android:orientation="vertical">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Bluetooth devices" android:textSize="26sp" android:textStyle="bold"
+            android:textColor="#16213A" android:layout_marginBottom="6dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Phase 1 · Device setup" android:textSize="14sp"
+            android:textColor="#526179" android:layout_marginBottom="16dp" />
+        <TextView android:id="@+id/bluetoothStatus" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Checking Bluetooth…" android:textStyle="bold"
+            android:padding="16dp" android:background="#E7F2FF"
+            android:textColor="#174B80" android:textSize="18sp" android:layout_marginBottom="14dp" />
+        <Button android:id="@+id/bluetoothOn" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:minHeight="52dp" android:text="Turn Bluetooth on"
+            android:backgroundTint="#2854AA" android:textColor="#FFFFFF" />
+        <Button android:id="@+id/bluetoothOff" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:minHeight="52dp" android:text="Bluetooth settings / Off"
+            android:backgroundTint="#E1EAF7" android:textColor="#173968" />
+        <Button android:id="@+id/bluetoothPaired" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:minHeight="52dp" android:text="Show paired devices"
+            android:backgroundTint="#2854AA" android:textColor="#FFFFFF" />
+        <Button android:id="@+id/bluetoothVisible" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:minHeight="52dp" android:text="Make device visible"
+            android:backgroundTint="#E1EAF7" android:textColor="#173968" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Paired devices" android:textColor="#16213A"
+            android:textSize="19sp" android:textStyle="bold" android:layout_marginTop="18dp"
+            android:layout_marginBottom="8dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Previously paired accessories and phones appear here."
+            android:textSize="13sp" android:textColor="#526179" android:layout_marginBottom="8dp" />
+        <ListView android:id="@+id/bluetoothDeviceList" android:layout_width="match_parent"
+            android:layout_height="230dp" android:background="#FFFFFF" android:divider="#E4EAF2"
+            android:dividerHeight="1dp" />
+        <Button android:id="@+id/openPhase2" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:minHeight="56dp" android:layout_marginTop="20dp"
+            android:text="Continue to Phase 2 →" android:textColor="#FFFFFF"
+            android:backgroundTint="#087E80" />
+    </LinearLayout>
+</ScrollView>

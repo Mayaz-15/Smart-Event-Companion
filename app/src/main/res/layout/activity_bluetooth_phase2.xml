@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fillViewport="true" android:background="#F8FAFF">
+    <LinearLayout android:orientation="vertical" android:padding="20dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Device communication" android:textSize="26sp" android:textStyle="bold"
+            android:textColor="#16213A" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Phase 2 · Both Android phones need this app installed and must be paired."
+            android:textSize="14sp" android:textColor="#526179" android:layout_marginBottom="12dp" />
+        <TextView android:id="@+id/phase2Status" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Ready" android:padding="16dp"
+            android:background="#E7F2FF" android:layout_marginBottom="10dp"
+            android:textColor="#174B80" android:textSize="16sp" />
+        <Button android:id="@+id/phase2Host" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:minHeight="52dp" android:text="1. Host: wait for connection"
+            android:backgroundTint="#2854AA" android:textColor="#FFFFFF" />
+        <Button android:id="@+id/phase2Refresh" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:minHeight="52dp" android:text="2. Show paired devices (tap phone)"
+            android:backgroundTint="#E1EAF7" android:textColor="#173968" />
+        <ListView android:id="@+id/phase2Devices" android:layout_width="match_parent"
+            android:layout_height="170dp" android:background="#FFFFFF"
+            android:divider="#E4EAF2" android:dividerHeight="1dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Message to send" android:textStyle="bold" android:textColor="#16213A"
+            android:layout_marginTop="16dp" android:layout_marginBottom="6dp" />
+        <EditText android:id="@+id/phase2Message" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:minHeight="56dp" android:padding="12dp"
+            android:background="#FFFFFF" android:hint="Event ID and attendee"
+            android:text="EVENT:1;ATTENDEE:Student3" android:singleLine="true"
+            android:textColor="#16213A" android:textColorHint="#526179" />
+        <Button android:id="@+id/phase2Send" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:minHeight="52dp" android:layout_marginTop="8dp"
+            android:text="3. Send to other phone" android:backgroundTint="#087E80"
+            android:textColor="#FFFFFF" />
+        <Button android:id="@+id/phase2Disconnect" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:minHeight="52dp" android:text="Disconnect"
+            android:backgroundTint="#E1EAF7" android:textColor="#173968" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Received messages" android:textSize="18sp" android:textStyle="bold"
+            android:layout_marginTop="12dp" android:layout_marginBottom="8dp"
+            android:textColor="#16213A" />
+        <TextView android:id="@+id/phase2Log" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:minHeight="100dp" android:padding="14dp"
+            android:text="Messages will appear here after connecting."
+            android:textColor="#16213A" android:background="#FFFFFF" />
+        <Button android:id="@+id/phase2Attendance" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:minHeight="52dp"
+            android:layout_marginTop="12dp" android:text="View saved attendance (SQLite)"
+            android:backgroundTint="#E1EAF7" android:textColor="#173968" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" android:textColor="#526179" android:textSize="13sp"
+            android:text="On the organizer/host phone, received attendance messages (EVENT:1;ATTENDEE:Student3) are saved with date and time. Other text remains chat only." />
+    </LinearLayout>
+</ScrollView>
