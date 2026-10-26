@@ -1,0 +1,14 @@
+SMART EVENT COMPANION — INTEGRATED MERGE
+
+Source base: GitHub master ZIP uploaded Oct 26 (Student 4 DatabaseHelper.java included).
+Merged: Student 2 JsonHelper.java + events.json; Student 3 BluetoothActivity, BluetoothPhase2Activity, BluetoothChatService, Bluetooth XML screens and permissions.
+Student 1 MainActivity and layout have only the additional Bluetooth navigation button.
+
+TEST:
+1. Android Studio: open THIS folder (containing settings.gradle.kts), sync, and Run on a physical Android phone.
+2. View Events -> select event -> register -> My Registered Events. Event should appear. Relaunch app and confirm it persists. Repeat registration; duplicate should show failure (CONFLICT_IGNORE).
+3. Test paired Bluetooth devices and both-phone connection/send/receive/disconnect/reconnect.
+4. Bluetooth messages are displayed but NOT yet persisted as attendance SQLite rows: Student 4 database currently has only a registrations table.
+5. File export/read and optional extra feature remain project-level requirements not included in this merge.
+
+CAUTION: This archive has not been compiled or device-tested after the merge. Do not overwrite shared GitHub master without reviewing diffs and testing.

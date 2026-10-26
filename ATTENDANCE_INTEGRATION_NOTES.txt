@@ -1,0 +1,22 @@
+ATTENDANCE INTEGRATION / TEST GUIDE
+
+This project builds on the last fully merged source and preserves registration data.
+Database version is upgraded 1 -> 2 using a non-destructive SQLite migration.
+The organizer is the phone that taps HOST. Only that phone stores received attendance.
+Message protocol is EVENT:<event ID>;ATTENDEE:<participant ID>.
+Use EVENT:1;ATTENDEE:Student3 to test AI Workshop (events.json uses IDs 1,2,3).
+The earlier placeholder EVT001 does not match events.json and will be rejected.
+
+TEST:
+1. Install this version on BOTH phones.
+2. Samsung HOST, TECNO CONNECT (paired phones).
+3. TECNO sends EVENT:1;ATTENDEE:Student3.
+4. On Samsung verify 'Attendance saved in SQLite'.
+5. On Samsung tap 'View saved attendance (SQLite)' and verify ID, attendee, timestamp.
+6. Close/reopen app and verify the row persists.
+7. Send plain HELLO; it is displayed but not saved as attendance.
+8. Existing registered events should still appear after the version upgrade.
+
+Attendance deduplicates event+attendee on the host (latest check-in timestamp wins).
+This code was statically checked, but must be compiled and tested in Android Studio.
+The UI layout has not yet been thoroughly redesigned for smaller screens.
